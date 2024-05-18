@@ -1,0 +1,14 @@
+aws_region               = "ap-south-1"
+ecr_repository_name      = "hello-world"
+ecs_cluster_name         = "hello-world-cluster"
+task_definition_family   = "hello-world"
+container_name           = "hello-world-container"
+container_cpu            = 256
+container_memory         = 512
+container_port           = 3000
+service_name             = "hello-world-service"
+service_desired_count    = 2
+service_launch_type      = "FARGATE"
+subnets                  = ["subnet-12345678", "subnet-87654321"]
+security_groups          = ["sg-12345678"]
+assign_public_ip         = true
